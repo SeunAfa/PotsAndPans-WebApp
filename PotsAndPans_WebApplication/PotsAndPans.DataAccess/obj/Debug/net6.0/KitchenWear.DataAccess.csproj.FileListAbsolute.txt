@@ -1,0 +1,17 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\KitchenWear.DataAccess.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\KitchenWear.DataAccess.runtimeconfig.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\KitchenWear.DataAccess.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\KitchenWear.DataAccess.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\KitchenWear.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\KitchenWear.Models.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.csproj.CopyComplete
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\refint\KitchenWear.DataAccess.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\KitchenWear.DataAccess.genruntimeconfig.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\ref\KitchenWear.DataAccess.dll

@@ -1,0 +1,9 @@
+-User Login Details
+Email:User@PotsAndPans.com
+Password:User1234!
+
+-Stripe Test Card Details
+You can use any Email, Name on card and Postal Code 
+Visa(16digit): 4000056655665556
+Date: 1256
+CVC: 248

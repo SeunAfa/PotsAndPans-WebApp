@@ -1,0 +1,138 @@
+﻿<style>
+    #companyListHeader-Container {
+        overflow: hidden;
+        /*width:100%;*/
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom:15px;
+    }
+
+    #createComapanyBtn {
+        margin-top: 3px;
+        /*margin-left: 930px;*/
+    }
+
+    /*DataTable-Container*/
+    #CompanyBtn-Container {
+        display: flex;
+        flex-direction: row;
+        margin-left: -20px;
+    }
+
+    #editBtnC {
+        width: 110px;
+        color: white;
+        background-color: black;
+    }
+
+    #deleteBtnC {
+        width: 110px;
+        color: black;
+        background-color: white;
+        border: solid black 1px;
+    }
+
+    .dataTables_wrapper {
+    }
+
+    .dataTables_length {
+        margin-top: -15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    #tblData_filter {
+        margin-top: -15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+</style>
+<div id="companyListHeader-Container" class="">
+    <a id="backBtn" asp-area="Customer" asp-controller="Home" asp-action="Index" style="text-decoration:none;margin-top:5px;margin-left:0px;" class="text-dark">
+        <i class="bi bi-arrow-left"></i>Back
+    </a>
+    <h3 class="text-dark" style="margin-left:30px;">Company List</h3>
+    <a id="createComapanyBtn" asp-controller="Company" asp-action="Upsert" class="btn" style="width:225px;margin-top:-5px;border-radius:0px;background-color:black;color:white;">
+        <i class="bi bi-plus-circle"></i> &nbsp; Create New Company
+    </a>
+</div>
+
+<table id="tblData" class="table row-bordered table-hover compact" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Borough</th>
+            <th>Post Code</th>
+            <th> </th>
+
+        </tr>
+    </thead>
+    <!--Table Data API Instead of tbody-->
+</table>
+@section Scripts{
+    <script>
+        var dataTable;
+
+        $(document).ready(function () {
+            loadDataTable();
+        });
+
+        function loadDataTable() {
+            dataTable = $('#tblData').DataTable({
+                "ajax": {
+                    "url": "/Admin/Company/GetAll"
+                },
+                "columns": [
+                    { "data": "name", "width": "15%" },
+                    { "data": "streetAddress", "width": "15%" },
+                    { "data": "city", "width": "15%" },
+                    { "data": "borough", "width": "15%" },
+                    { "data": "postCode", "width": "15%" },
+                    {
+                        "data": "id",
+                        "render": function (data) {
+                            return `
+                                    <div id="CompanyBtn-Container" role="">
+                                        <a id="editBtnC" href="/Admin/Company/Upsert?id=${data}" class="btn  mx-2"><i class="bi bi-pencil-square"></i>Edit</a>
+                                        <a id="deleteBtnC" onClick=Delete('/Admin/Company/Delete/${data}') class="btn  mx-2"><i class="bi bi-trash-fill"></i>Delete</a>
+                                    </div>
+                                    `
+                        },
+                        "width": "15%",
+                    }
+                ]
+            });
+        }
+
+        function Delete(url) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#000000',
+                cancelButtonColor: '#000000',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: url,
+                        type: 'DELETE',
+                        success: function (data) {
+                            if (data.success) {
+                                dataTable.ajax.reload();
+                                toastr.success(data.message);
+                            } else {
+                                toastr.error(data.message);
+
+                            }
+                        }
+                    })
+                }
+            })
+        }
+    </script>
+}

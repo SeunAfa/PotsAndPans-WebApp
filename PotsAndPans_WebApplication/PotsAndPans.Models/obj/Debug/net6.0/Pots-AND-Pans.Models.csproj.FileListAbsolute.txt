@@ -1,0 +1,12 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\bin\Debug\net6.0\Pots-AND-Pans.Models.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\bin\Debug\net6.0\Pots-AND-Pans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\bin\Debug\net6.0\Pots-AND-Pans.Models.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\refint\Pots-AND-Pans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\Pots-AND-Pans.Models.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Models\obj\Debug\net6.0\ref\Pots-AND-Pans.Models.dll

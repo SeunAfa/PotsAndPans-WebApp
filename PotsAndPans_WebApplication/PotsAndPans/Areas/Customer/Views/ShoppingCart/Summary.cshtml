@@ -1,0 +1,149 @@
+﻿@model PotsAndPans.Models.Models.ViewModels.ShoppingCartVM
+@using Microsoft.Extensions.Options;
+@inject IOptions<PotsAndPans.Utility.StripeSettings> Stripe
+<style>
+	#summaryContainer {
+        width: 100%;
+		
+    }
+    #headerSummaryBasketContainer {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+    }
+	#customerDetail_summaryContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+	#customerDetailContainer{
+		overflow: hidden;
+        display: flex;
+        flex-direction:column;
+        width: 60%;
+		padding:30px;
+	}
+	#summaryDetailContainer{
+		width: 40%;
+        /*height:260px;*/
+        margin-left: 20px;
+        padding:20px;
+        border-left:solid 2px black;
+	}
+	#inputField-Container{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		margin-left:80px;
+	}
+	#customerDetail-Input{
+		margin-top:5px;
+	}
+	#PlaceOrderBtn{
+		margin-top:25px;
+		display:block;
+		margin-right:auto;
+		margin-left:auto;
+		
+	}
+</style>
+<form method="post">
+	<div id="summaryContainer" class="container">
+		<div id="headerSummaryBasketContainer" class="">
+			<a id="backBtn" asp-area="Customer" asp-controller="ShoppingCart" asp-action="Index" style="text-decoration:none;margin-top:5px;">
+                <i class="bi bi-arrow-left"></i>Back 
+			</a>
+			<h1 style="font-size:25px;margin-left:10px;">Where should we send your order?</h1>
+        </div>
+		<div id="customerDetail_summaryContainer" class="">
+			<div id="customerDetailContainer">
+
+				     <div id="inputField-Container" class="">	
+						        <div id="customerDetail-Input" class="">
+									<label>Name*</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="OrderHeader.Name" class="form-control" />
+									<span asp-validation-for="OrderHeader.Name" class="text-danger" ></span>
+								</div>
+					 </div>
+					 <div id="inputField-Container" class="">	
+						        <div id="customerDetail-Input" class="">
+									<label>Phone Number*</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="OrderHeader.PhoneNumber" class="form-control" />
+									<span asp-validation-for="OrderHeader.PhoneNumber" class="text-danger" ></span>
+								</div>
+					 </div>
+					 <div id="inputField-Container" class="">	
+						        <div id="customerDetail-Input" class="">
+									<label>Street Address*</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="OrderHeader.StreetAddress" class="form-control" />
+									<span asp-validation-for="OrderHeader.StreetAddress" class="text-danger" ></span>
+								</div>
+					 </div>
+					 <div id="inputField-Container" class="">	
+						        <div id="customerDetail-Input" class="">
+									<label>City*</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="OrderHeader.City" class="form-control" />
+									<span asp-validation-for="OrderHeader.City" class="text-danger" ></span>
+								</div>
+					 </div>
+					 <div id="inputField-Container" class="">	
+						        <div id="customerDetail-Input" class="">
+									<label>Borough*</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="OrderHeader.Borough" class="form-control" />
+									<span asp-validation-for="OrderHeader.Borough" class="text-danger" ></span>
+								</div>
+					 </div>
+					 <div id="inputField-Container" class="">	
+						        <div id="customerDetail-Input" class="">
+									<label>Post Code*</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="OrderHeader.PostCode" class="form-control" />
+									<span asp-validation-for="OrderHeader.PostCode" class="text-danger" ></span>
+								</div>
+					 </div>
+			</div>
+			<div id="summaryDetailContainer">
+							<h4 class="d-flex justify-content-between align-items-center ">Order Summary</h4>
+							<h1 style="color:red; font-size:14px;">Estimate Arrival Date: @DateTime.Now.AddDays(7).ToShortDateString() - @DateTime.Now.AddDays(14).ToShortDateString()</h1>
+							<ul class="list-group mb-3">
+								@foreach (var details in Model.ListCart)
+								{
+									<li class="list-group-item d-flex justify-content-between">
+									<div>
+								<img src="@details.Product.ImageUrl" style="width:200px;height:130px;padding:10px;">
+								<h6 class="my-0">@details.Product.Title</h6>
+										<small class="text-muted">Quantity: @details.Count</small>
+									</div>
+									<span class="text-muted">@((details.Price * details.Count).ToString("c")) </span>
+								</li>
+								}
+								<li class="list-group-item d-flex justify-content-between bg-light">
+									<small class="">Total (USD)</small>
+									<strong class="">@Model.OrderHeader.OrderTotal.ToString("c")</strong>
+								</li>
+							</ul>	
+							<button id="PlaceOrderBtn" type="submit" value="Place Order" class="btn btn-success form-control">Place Order</button>	
+			</div>
+   	    </div>
+	</div>
+</form>
+<!--ClientSide Validation-->
+@section Scripts{
+    @{
+	<partial name="_ValidationScriptsPartial" />
+    }
+}

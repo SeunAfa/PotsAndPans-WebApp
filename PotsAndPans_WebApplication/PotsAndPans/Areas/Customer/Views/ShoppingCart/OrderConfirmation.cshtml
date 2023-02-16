@@ -1,0 +1,44 @@
+﻿@model int
+<style>
+    #orderConfirmation-Container {
+        width: 100%;
+        /*height: 600px;*/
+    }
+
+    #orderConfirmation-Text {
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #backorderCon-Btn{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #backgroundBlur{
+        opacity:0.9;
+        filter: blur(5px);
+        background-color:white;
+        width: 40%;
+        height:300px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<div id="orderConfirmation-Container" class="" src="~/images/7647150_279.jpg">
+    <div id="backgroundBlur"></div>
+        <div id="orderConfirmation-Text">
+            <h1 class="text-primary text-center">Thank you!</h1>
+            <p class="text-primary text-center">Your Order Number is : @Model</p>
+            <p class="text-primary text-center">Your order has been placed successfully!</p>
+            <a asp-area="Admin" asp-controller="OrderManagement" asp-action="Details" asp-route-orderId="@Model" class="btn btn-primary" id="backorderCon-Btn">Your Order Details</a>
+        </div>
+    <img id="orderConfirmation-Img" class="container" src="~/images/7647150_279.jpg" style="height:800px;" />
+</div>

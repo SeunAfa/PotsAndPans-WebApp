@@ -1,0 +1,168 @@
+﻿@model PotsAndPans.Models.Models.ViewModels.ShoppingCartVM
+<style>
+    #basketContainer {
+        width: 100%;
+    }
+
+    #headerBasketContainer {
+        overflow: hidden;
+      
+        width: 100%;
+    }
+
+    #basketList_summaryContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /*height: 600px;*/
+    }
+
+    #listContainer {
+        overflow: hidden;
+        display: flex;
+        flex-direction:column;
+        width: 60%;
+    }
+    #productItemContainer_inList{
+        overflow: hidden;
+        width: 100%;
+        height: 170px;
+    }
+    #productItemInfoContainer{
+        display:flex;
+        flex-direction:row;
+        overflow: hidden;
+        width: 100%;
+        height: 130px;
+        padding:5px;
+        /*background-color:purple;*/
+    }
+    #productItem_IMG{
+        width: 200px;
+        height: 130px;
+        padding-bottom:10px;
+    }
+    #productItemInfo-Wrapper{
+        display:flex;
+        flex-direction:column;
+        padding:5px;
+        margin-left:20px;
+    }
+    #productItem-Price{
+        font-size:16px;
+       /* margin-left:460px;*/
+    }
+    #productItem-Title{
+        margin-top:-10px;
+        font-size:14px;
+    }
+    #productItem-ProductNumber{
+        margin-top:-15px;
+        font-size:12px;
+    }
+    #productItemBtn-Area{
+        display:flex;
+        flex-direction:row;
+        /*background-color:purple;*/
+        height:20px;
+        margin:auto;
+    }
+    #productItemBtn-Area-Center{
+        display:flex;
+        flex-direction:row;
+        margin:auto;
+        /*background-color:red;*/
+        height:35px;
+        justify-content: center;
+        align-items: center;
+    }
+    #productItemBtn-Plus{
+        padding-right:10px;
+    }
+    #productItemBtn-priceCountTotal{
+        margin-top:18px;
+    }
+    #productItemBtn-Minus{
+         padding-left:10px; 
+    }
+    #removeBtn{
+        margin:auto;
+
+    }
+    #summaryContainer {
+        width: 40%;
+        height:260px;
+        /*background-color: khaki;*/
+        margin-left: 20px;
+        padding:20px;
+        border-left:solid 2px black;
+    }
+    #orderSummary{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #orderSummary-Info{
+        margin-top:16px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #checkoutBtn{
+        margin-top:40px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+</style>
+<form method="post">
+    <div id="basketContainer" class="container">
+        <div id="headerBasketContainer" class="" style="display:flex;flex-direction:row;">
+            <a id="backBtn"asp-controller="Home" asp-action="Index" style="text-decoration:none;margin-top:5px;">
+                <i class="bi bi-arrow-left"></i>Back</a>
+            <h1 style="font-size:25px;margin-left:10px;">Your Basket</h1>
+        </div>
+        <br />
+        <div id="basketList_summaryContainer" class="">
+            <div id="listContainer">
+                @foreach (var item in Model.ListCart)
+                {
+                    <!--Product Items-->
+                    <div id="productItemContainer_inList">
+                        <div id="productItemInfoContainer">
+                            <img id="productItem_IMG" src="@item.Product.ImageUrl" />
+                            <div id="productItemInfo-Wrapper">
+                                <p id="productItem-Price">@item.Price.ToString("c")</p>
+                                <p id="productItem-Title" style="width:310px;"><strong>@item.Product.Title</strong></p>
+                                <p id="productItem-ProductNumber">Product Number : <span>@item.Product.ProductNumber</span> </p>
+                            </div>
+                        </div>
+                        <div id="productItemBtn-Area" class="">
+                            <div id="productItemBtn-Area-Center">
+                                <a id="productItemBtn-Plus" asp-action="plus" asp-route-cartId="@item.Id"><i class="bi bi-plus-circle-fill" style="font-size: 25px"></i></a>
+                                <p id="productItemBtn-priceCountTotal" class="text-dark"><strong>@item.Price.ToString("c")<span> &nbsp;x &nbsp;</span> @item.Count </strong></p>
+                                <a id="productItemBtn-Minus" asp-action="minus" asp-route-cartId="@item.Id"><i class="bi bi-dash-circle-fill" style="font-size: 25px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="removeBtn" asp-action="remove" asp-route-cartId="@item.Id" class="text-danger">Remove</a>
+                    <hr />
+                }
+            </div>
+            <div id="summaryContainer">  
+                <div id="orderSummary">
+                    <h4>Order Summary</h4>
+                    <div id="orderSummary-Info">
+                         <p style="">Delivery<span>(3-7 days)</span>: Free</p>
+                         <hr>
+                         <p>Subtotal: <strong class="text-dark">@Model.OrderHeader.OrderTotal.ToString("c")</strong></p>
+                    </div>
+                    <a asp-action="Summary" id="checkoutBtn" class="btn btn-success ">Continue to checkout</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</form>

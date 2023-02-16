@@ -1,0 +1,12 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\bin\Release\net6.0\PotsAndPans.Utility.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\bin\Release\net6.0\PotsAndPans.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\bin\Release\net6.0\PotsAndPans.Utility.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\refint\PotsAndPans.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\PotsAndPans.Utility.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Utility\obj\Release\net6.0\ref\PotsAndPans.Utility.dll

@@ -1,0 +1,12 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\bin\Debug\net6.0\KitchenWear.Utility.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\bin\Debug\net6.0\KitchenWear.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\bin\Debug\net6.0\KitchenWear.Utility.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\refint\KitchenWear.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\KitchenWear.Utility.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\ref\KitchenWear.Utility.dll

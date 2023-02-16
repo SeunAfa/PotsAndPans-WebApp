@@ -1,0 +1,12 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\bin\Debug\net6.0\Pots-AND-Pans.Utility.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\bin\Debug\net6.0\Pots-AND-Pans.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\bin\Debug\net6.0\Pots-AND-Pans.Utility.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\refint\Pots-AND-Pans.Utility.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\Pots-AND-Pans.Utility.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.Utility\obj\Debug\net6.0\ref\Pots-AND-Pans.Utility.dll

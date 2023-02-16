@@ -1,0 +1,220 @@
+﻿@using PotsAndPans.Utility;
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pots & Pans.com</title>
+    <link href="~/scss/bootstrap.custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Responsive.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" hrefl="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+    <link href="~/css/dataTableCustom-Themes.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/css/style.min.css" rel="stylesheet">
+    <style>
+
+        .toast {
+            background-color: #030303;
+        }
+
+        .toast-info {
+            background-color: #3276b1;
+        }
+
+        .toast-info2 {
+            background-color: #2f96b4;
+        }
+
+        .toast-error {
+            background-color: #bd362f;
+        }
+
+        .toast-success {
+            background-color: #51a351;
+        }
+
+        .toast-warning {
+            background-color: #f89406;
+        }
+        /*dropdownContainer*/
+        #dropDownA_Link {
+            cursor: pointer;
+        }
+
+        .dropdown-item {
+            margin-left: 20px;
+            border-left: solid white 2px;
+        }
+
+            .dropdown-item:hover {
+                background-color: #303234;
+            }
+    </style>
+</head>
+<body>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+         data-sidebar-position="" data-header-position="" data-boxed-layout="full">
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Pots & Pans.com</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        @if (User.IsInRole(SD.Role_Admin))
+        {
+            <aside class="left-sidebar " data-sidebarbg="skin6" style="background-color:#0e1111;height:100%;">
+                <!-- Sidebar scroll-->
+                <div class="scroll-sidebar ">
+                    <!-- Sidebar navigation-->
+                    <nav class="sidebar-nav ">
+                        <ul id="sidebarnav" class="" style="background-color:#0e1111;">
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Customer" asp-controller="Home" asp-action="Index" aria-expanded="false">
+                                    <span class="hide-menu text-white">Home</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Identity" asp-page="/Account/Manage/Index" aria-expanded="false">
+                                    <span class="hide-menu text-white">Account Details</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item ">
+                                <div class="dropdown">
+                                    <a id="dropDownA_Link" class="sidebar-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="hide-menu text-white">Content Managment</span>
+                                    </a>
+                                    <div style="margin-left:100px;">
+                                        <ul class="dropdown-menu" style="background-color:#0e1111;border:none;">
+                                            <li><a class="dropdown-item text-white" asp-area="Admin" asp-controller="Product" asp-action="Index">Products</a></li>
+                                            <li><a class="dropdown-item text-white" asp-area="Admin" asp-controller="Category" asp-action="Index">Categories</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar-item ">
+                                <div class="dropdown">
+                                    <a id="dropDownA_Link" class="sidebar-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="hide-menu text-white">Create User</span>
+                                    </a>
+                                    <div style="margin-left:100px;">
+                                        <ul class="dropdown-menu" style="background-color:#0e1111;border:none;">
+                                            <li><a class="dropdown-item text-white" asp-area="Identity" asp-page="/Account/Register">Create User</a></li>
+                                            <li><a class="dropdown-item text-white" asp-area="Admin" asp-controller="Company" asp-action="Index">Create Company</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Admin" asp-controller="OrderManagement" asp-action="Index" aria-expanded="false">
+                                    <span class="hide-menu text-white">Order Management</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Identity" asp-page="/Account/Manage/ChangePassword" aria-expanded="false">
+                                    <span class="hide-menu text-white">Change Password</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Identity" asp-page="/Account/Manage/DeletePersonalData" aria-expanded="false">
+                                    <span class="hide-menu text-white">Delete Account</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"
+                                  style="margin-left:15px;margin-top:10px;padding-bottom:40px;">
+                                    <button id="" type="submit" class="nav-link btn-close-white text-dark" style="background-color:white;"><i class="bi bi-box-arrow-right"></i> &nbsp;Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        }
+
+        @if (User.IsInRole(SD.Role_User_Indi))
+        {
+            <aside class="left-sidebar " data-sidebarbg="skin6" style="background-color:#0e1111;height:100%;">
+                <!-- Sidebar scroll-->
+                <div class="scroll-sidebar ">
+                    <!-- Sidebar navigation-->
+                    <nav class="sidebar-nav ">
+                        <ul id="sidebarnav" class="" style="background-color:#0e1111;">
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Identity" asp-page="/Account/Manage/Index" aria-expanded="false">
+                                    <span class="hide-menu text-white">Account</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Admin" asp-controller="OrderManagement" asp-action="Index" aria-expanded="false">
+                                    <span class="hide-menu text-white">Order Management</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Identity" asp-page="/Account/Manage/ChangePassword" aria-expanded="false">
+                                    <span class="hide-menu text-white">Change Password</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-area="Identity" asp-page="/Account/Manage/DeletePersonalData" aria-expanded="false">
+                                    <span class="hide-menu text-white">Delete Account</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"
+                                  style="margin-left:15px;margin-top:10px;padding-bottom:40px;">
+                                    <button id="" type="submit" class="nav-link btn-close-white text-dark" style="background-color:white;"><i class="bi bi-box-arrow-right"></i> &nbsp;Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        }
+
+        <div class="page-wrapper bg-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <partial name="_Notification" />
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @section Scripts{
+        <script>
+
+        </script>
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

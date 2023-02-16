@@ -1,0 +1,17 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\Pots-AND-Pans.DataAccess.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\Pots-AND-Pans.DataAccess.runtimeconfig.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\Pots-AND-Pans.DataAccess.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\Pots-AND-Pans.DataAccess.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\Pots-AND-Pans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\bin\Debug\net6.0\Pots-AND-Pans.Models.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.csproj.CopyComplete
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\refint\Pots-AND-Pans.DataAccess.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\Pots-AND-Pans.DataAccess.genruntimeconfig.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\KitchenWear_WebApplication\KitchenWear.DataAccess\obj\Debug\net6.0\ref\Pots-AND-Pans.DataAccess.dll

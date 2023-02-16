@@ -1,0 +1,107 @@
+﻿@model PotsAndPans.Models.Models.ShoppingCart
+<style>
+    #productDetailsPage {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #ImageProductDetail {
+        width: 45%;
+        height: 350px;
+    }
+
+    #rightItem_Info {
+        width: 55%;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    #categoryDetail {
+        padding: 5px;
+    }
+
+    #tbl {
+        width: 300px;
+        margin-top: -20px;
+    }
+
+    #Counter {
+        margin-top:-50px;
+    }
+
+    #countBtn {
+        margin: 0 auto;
+        border: none;
+        width: 48px;
+        height: 35px;
+    }
+
+    #addCart {
+        margin: 0 auto;
+        width: 160px;
+        padding-bottom: 10px;
+    }
+
+</style>
+<a id="backBtn" asp-action="Index" style="text-decoration:none;">
+    <i class="bi bi-arrow-left"></i>
+    Back
+</a>
+<form method="post">
+    <input hidden asp-for="ProductId" />
+    <div id="productDetailsPage" class="container">
+        <img id="ImageProductDetail" src="@Model.Product.ImageUrl" />
+        <div id="rightItem_Info">
+            <p id="categoryDetail" class="bg-black text-white">@Model.Product.Category.Name</p>
+            <h4 class="text-primary" style="font-size:18px;">@Model.Product.Title</h4>
+            <div id="tblContainer">
+                <p class="text-primary" style="font-size:10px;margin-top:10px;">Price By Qunatity</p>
+                <table id="tbl" class="table ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">1-50</th>
+                            <th scope="col">51-100</th>
+                            <th scope="col">100+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Price</th>
+                            <td scope="col">@Model.Product.Price.ToString("c")</td>
+                            <td scope="col">@Model.Product.Price50.ToString("c")</td>
+                            <td scope="col">@Model.Product.Price100.ToString("c")</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+                <div class="row pl-2">
+                    <h3 class="text-primary">About this product</h3>
+                    <p class="text-primary" style="font-size:15px;">@Html.Raw(Model.Product.Description)</p>
+                </div>
+
+                <div id="" style="display:flex;flex-direction:row;margin-top:10px;">
+                    <div id="" style="display:flex;flex-direction:column;">
+                        <h6 class="text-danger pb-2" style="margin-top:-10px;width:260px;">Price was: <strike class="text-danger" style="">@Model.Product.ListPrice.ToString("c")</strike></h6>
+                        <h5 class="text-primary pb-2" style="margin-top:-15px;">Price Now: <b class="text-primary">@Model.Product.Price.ToString("c")</b></h5>
+                    </div>
+
+                    <div id="Counter" class="container" style="margin: 0 auto;">
+                        <input id="countBtn" asp-for="Count" style="border:solid 2px black;padding:5px;width:55px;">
+                    </div>
+                </div>
+
+
+                <div class="shoppingCartCountArea">
+                    <button id="addCart" class="btn btn-primary" type="submit" value="Add to Cart" style="">Add To Cart</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</form>

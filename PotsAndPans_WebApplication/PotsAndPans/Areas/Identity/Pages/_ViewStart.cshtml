@@ -1,0 +1,15 @@
+﻿@using PotsAndPans.Utility;
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@if(User.IsInRole(SD.Role_Admin))
+{
+    Layout = "/Views/Shared/_AdminDashBoard.cshtml";
+}else if(User.IsInRole(SD.Role_User_Indi))
+{
+    Layout = "/Views/Shared/_AccountDashBoard.cshtml";
+}
+
+

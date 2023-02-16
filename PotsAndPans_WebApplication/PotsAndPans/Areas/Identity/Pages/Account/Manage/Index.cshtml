@@ -1,0 +1,106 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Account";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+<style>
+    #inputFieldProfile-Container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    #fieldsProfile-Container {
+        width: 600px;
+    }
+
+    #update-profile-button {
+        background-color: black;
+        color: white;
+    }
+</style>
+<div id="accountContainer" class="container-fluid">
+    <div id="accountContainer-Info">
+        <h2 class="text-dark">Your @ViewData["Title"]</h2>
+        <partial name="_StatusMessage" for="StatusMessage" />
+        <form id="profile-form" method="post">
+            <div id="fieldsProfile-Container">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div id="inputFieldProfile-Container" class="form-floating">
+                    <input id="AccountUsername-input" asp-for="Username" class="form-control" />
+                    <label asp-for="Username" class="form-label"></label>
+                </div>
+
+                <div id="inputFieldProfile-Container" class="form-floating">
+                    <input id="AccountEmail-input" asp-for="Input.Email" class="form-control" />
+                    <label asp-for="Input.Email" class="form-label"></label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+
+                <div id="inputFieldProfile-Container" class="form-floating">
+                    <input asp-for="Input.PhoneNumber" class="form-control" />
+                    <label asp-for="Input.PhoneNumber" class="form-label"></label>
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <button id="update-profile-button" type="submit" class="btn">Update</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        //onclick="return preventEdit()"
+
+        window.addEventListener("load", preventEdit);
+
+
+
+        function preventEdit() {
+            //Username
+            if (document.getElementById("AccountUsername-input").value == "User@PotsAndPans.com") {
+
+                var disabled = document.getElementById("AccountUsername-input").disabled;
+
+                if (disabled) {
+
+                    document.getElementById("AccountUsername-input").disabled = false;
+
+                }
+
+                else {
+
+                    document.getElementById("AccountUsername-input").disabled = true;
+
+                }
+
+            }
+            //Email
+            if (document.getElementById("AccountEmail-input").value == "User@PotsAndPans.com") {
+
+                var disabled = document.getElementById("AccountEmail-input").disabled;
+
+                if (disabled) {
+
+                    document.getElementById("AccountEmail-input").disabled = false;
+
+                }
+
+                else {
+
+                    document.getElementById("AccountEmail-input").disabled = true;
+
+                }
+
+            }
+        }
+
+
+
+    </script>
+}

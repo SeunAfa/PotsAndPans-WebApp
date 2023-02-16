@@ -1,0 +1,27 @@
+﻿$primary: black;
+$secondary: white;
+@import "../lib/bootstrap/scss/bootstrap";
+/*Index*/
+.card{
+    border:none;
+    margin-top:50px;
+    border-radius:20px;
+    overflow:hidden;
+    height:430px;
+    width:340px;
+}
+.cardImg{
+    height:400px;
+}
+.card-body {
+    margin-top: 20px;
+    height: 130px;
+    background-color: $dark;
+}
+.btn {
+    border-radius: 25px;
+    width: 245px;
+    height: 35px;
+}
+/*Product*/
+

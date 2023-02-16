@@ -1,0 +1,129 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*Account - details*/
+.open-button {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 350px;
+    right: -120px;
+    width: 180px;
+    transform: rotate(-90deg) translate(0px,-100%);
+}
+
+.form-popup {
+    padding: 20px;
+    background-color: white;
+    height: 500px;
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    bottom: 85px;
+    right: 55px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    overflow-y: scroll;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.copyInputButton {
+    display: flex;
+    flex-direction: row;
+    border: solid black 2px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 480px;
+    overflow: hidden;
+}
+
+.placeHolderUserDetails-Data {
+    width: 360px;
+}
+
+input[type="text"]:disabled {
+    background: transparent;
+}
+
+.copyIcon {
+    display: flex;
+    flex-direction: row;
+    /*position:fixed;*/
+    margin-left: 95px;
+}
+
+.myTooltip {
+    margin-left: -10px;
+}
+
+.bi-clipboard-check {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.cancelUserDetail {
+    color: white;
+    display:block;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: white;
+    }

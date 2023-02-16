@@ -1,0 +1,12 @@
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\bin\Release\net6.0\PotsAndPans.Models.deps.json
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\bin\Release\net6.0\PotsAndPans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\bin\Release\net6.0\PotsAndPans.Models.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.csproj.AssemblyReference.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.AssemblyInfoInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.AssemblyInfo.cs
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.csproj.CoreCompileInputs.cache
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\refint\PotsAndPans.Models.dll
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\PotsAndPans.Models.pdb
+C:\Users\seun1\Desktop\Developer Resources\SoftwareDevelopmentProjects\PotsAndPans_WebApplication\PotsAndPans.Models\obj\Release\net6.0\ref\PotsAndPans.Models.dll
